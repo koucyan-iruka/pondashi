@@ -1,0 +1,44 @@
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.mobile-button-wide {
+    flex: 1 1 30%;
+    min-width: 80px;
+    min-height: 60px;
+    height: 15%;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffbaba;
+    color: #000000;
+}
+
+.mobile-button {
+    flex: 1 1 30%;
+    min-width: 80px;
+    width: 100%;
+    margin-right: 5px;
+    min-height: 100;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #badcff;
+    color: #000000;
+}
+
+.mobile-button:active {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.mobile-button-wide:active {
+    background-color: #b30000;
+    color: #ffffff;
+}
