@@ -17,6 +17,7 @@
     border: none;
     background-color: #ffbaba;
     color: #000000;
+    border-radius: 20px;
 }
 
 .mobile-button {
@@ -31,14 +32,42 @@
     border: none;
     background-color: #badcff;
     color: #000000;
+    border-radius: 20px;
 }
 
 .mobile-button:active {
     background-color: #0056b3;
     color: #ffffff;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: #000000;
 }
 
 .mobile-button-wide:active {
     background-color: #b30000;
     color: #ffffff;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: #000000;
+}
+
+.inputRange {
+    appearance: none;
+    width: 85%;
+    margin-left: 5%;
+    height: 12px;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #e4e4e4 30%);
+    cursor: pointer;
+}
+
+/* ツマミ：Chrome, Safari, Edge用 */
+.inputRange::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    background: #00c7d5;
+    box-shadow: none;
 }
