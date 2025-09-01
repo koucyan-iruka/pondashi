@@ -23,7 +23,7 @@
 .mobile-button {
     flex: 1 1 30%;
     min-width: 80px;
-    width: 100%;
+    width: auto;
     margin-right: 5px;
     min-height: 100;
     margin-bottom: 5px;
