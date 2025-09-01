@@ -33,6 +33,7 @@
     background-color: #badcff;
     color: #000000;
     border-radius: 20px;
+    font-family:sans-serif
 }
 
 .mobile-button:active {
@@ -41,6 +42,7 @@
     outline-width: 3px;
     outline-style: solid;
     outline-color: #000000;
+    font-family:sans-serif
 }
 
 .mobile-button-wide:active {
@@ -49,6 +51,7 @@
     outline-width: 3px;
     outline-style: solid;
     outline-color: #000000;
+    font-family:sans-serif
 }
 
 .inputRange {
