@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (stopBtn && stopBtn.parentNode) {
             stopBtn.parentNode.insertBefore(seekBar, stopBtn.nextSibling);
         } else {
-            document.body.appendChild(seekBar);
+            document.body.appendChild(seekBar);z
         }
     }
 
