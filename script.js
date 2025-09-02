@@ -153,8 +153,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll("button:not(#stp)");
     buttons.forEach(btn => {
         btn.addEventListener("click", () => {
-            const name = btn.textContent.trim();
-            playSound(name);
+            const soundName = btn.dataset.sound; // data-sound 属性から音声ファイル名を取得
+            if (soundName) {
+                playSound(soundName);
+            }
         });
     });
 
@@ -176,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (stopBtn && stopBtn.parentNode) {
             stopBtn.parentNode.insertBefore(seekBar, stopBtn.nextSibling);
         } else {
-            document.body.appendChild(seekBar);z
+            document.body.appendChild(seekBar);
         }
     }
 
@@ -196,6 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 初期化
     setupSeekBar();
 });
+
 
 inputRange.addEventListener("input", function() {
     const ratio = (this.value - this.min) / (this.max - this.min) * 100;
